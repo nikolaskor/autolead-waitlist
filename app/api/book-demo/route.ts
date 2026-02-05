@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       subject: "Takk for din interesse - Autolead",
       html: `
         <h2>Takk for din interesse!</h2>
-        <p>Vi har mottatt din forespørsel om en demo av AutoLead.</p>
+        <p>Vi har mottatt din forespørsel om en demo av Autolead.</p>
         <p>En av våre rådgivere vil kontakte deg innen kort tid.</p>
         <br>
         <p>Med vennlig hilsen,</p>
