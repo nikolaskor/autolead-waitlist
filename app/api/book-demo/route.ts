@@ -38,7 +38,7 @@ export async function POST(request: Request) {
         <p>En av våre rådgivere vil kontakte deg innen kort tid.</p>
         <br>
         <p>Med vennlig hilsen,</p>
-        <p><strong>AutoLead-teamet</strong></p>
+        <p><strong>Autolead-teamet</strong></p>
       `,
     })
 
