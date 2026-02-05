@@ -69,9 +69,15 @@ function GlitchScene({ isHovered }: GlitchSceneProps) {
     const renderPass = new RenderPass(scene, camera)
     composer.addPass(renderPass)
 
-    // Add glitch pass
+    // Add glitch pass with moderate intensity
     const glitchPass = new GlitchPass()
-    glitchPass.goWild = false // Set to true for more intense glitch
+    glitchPass.goWild = false
+    // Reduce glitch intensity by lowering displacement values
+    if (glitchPass.uniforms) {
+      glitchPass.uniforms.amount.value = 0.0015 // Default ~0.004, lower = subtler
+      glitchPass.uniforms.distortion_x.value = 0.3 // Reduce horizontal distortion
+      glitchPass.uniforms.distortion_y.value = 0.3 // Reduce vertical distortion
+    }
     composer.addPass(glitchPass)
     glitchPassRef.current = glitchPass
 
