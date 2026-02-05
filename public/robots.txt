@@ -1,0 +1,6 @@
+# Autolead Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://autolead.no/sitemap.xml
