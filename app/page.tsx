@@ -126,7 +126,7 @@ export default function WaitlistPage() {
           <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8 lg:gap-12">
             {/* Stat 1 */}
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-white drop-shadow-2xl font-extralight">
+              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-2xl font-extralight">
                 100%
               </div>
               <div className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-base text-white/70 tracking-wider sm:tracking-widest uppercase">
@@ -136,7 +136,7 @@ export default function WaitlistPage() {
 
             {/* Stat 2 */}
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-white drop-shadow-2xl font-extralight">
+              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-2xl font-extralight">
                 24/7
               </div>
               <div className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-base text-white/70 tracking-wider sm:tracking-widest uppercase">
@@ -146,7 +146,7 @@ export default function WaitlistPage() {
 
             {/* Stat 3 */}
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl text-white drop-shadow-2xl font-extralight">
+              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-2xl font-extralight">
                 60s
               </div>
               <div className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-base text-white/70 tracking-wider sm:tracking-widest uppercase">
