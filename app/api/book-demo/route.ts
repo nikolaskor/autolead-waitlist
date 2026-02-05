@@ -16,9 +16,9 @@ export async function POST(request: Request) {
 
     // Send notification email to business
     await resend.emails.send({
-      from: "AutoLead <onboarding@resend.dev>", // Update this after verifying your domain
+      from: "AutoLead <noreply@autolead.no>",
       to: process.env.BUSINESS_EMAIL!,
-      subject: "Ny demo forespørsel - AutoLead",
+      subject: "Ny demo forespørsel - Autolead",
       html: `
         <h2>Ny demo forespørsel</h2>
         <p>Noen har booket en demo via nettsiden.</p>
@@ -29,9 +29,9 @@ export async function POST(request: Request) {
 
     // Optionally send confirmation to the user
     await resend.emails.send({
-      from: "AutoLead <onboarding@resend.dev>", // Update this after verifying your domain
+      from: "Autolead <noreply@autolead.no>",
       to: email,
-      subject: "Takk for din interesse - AutoLead",
+      subject: "Takk for din interesse - Autolead",
       html: `
         <h2>Takk for din interesse!</h2>
         <p>Vi har mottatt din forespørsel om en demo av AutoLead.</p>
