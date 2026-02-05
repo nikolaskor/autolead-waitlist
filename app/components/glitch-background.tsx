@@ -22,16 +22,17 @@ function GlitchScene({ isHovered }: GlitchSceneProps) {
     // Calculate aspect ratios
     const imageAspect = texture.image.width / texture.image.height
     const screenAspect = size.width / size.height
-    
+
     // Use orthographic camera
+    const orthoCamera = camera as THREE.OrthographicCamera
     const frustumSize = 1
-    camera.left = -frustumSize * screenAspect
-    camera.right = frustumSize * screenAspect
-    camera.top = frustumSize
-    camera.bottom = -frustumSize
-    camera.near = 0.1
-    camera.far = 1000
-    ;(camera as THREE.OrthographicCamera).updateProjectionMatrix()
+    orthoCamera.left = -frustumSize * screenAspect
+    orthoCamera.right = frustumSize * screenAspect
+    orthoCamera.top = frustumSize
+    orthoCamera.bottom = -frustumSize
+    orthoCamera.near = 0.1
+    orthoCamera.far = 1000
+    orthoCamera.updateProjectionMatrix()
     
     // Calculate scale to cover screen while maintaining aspect ratio
     // This mimics CSS background-size: cover
